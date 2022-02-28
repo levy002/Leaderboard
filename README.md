@@ -1,4 +1,4 @@
-# Leaderboard#
+# Leaderboard
 <img src="./images/screenshot.png" alt="Screenshot">
 
 ## Built With
