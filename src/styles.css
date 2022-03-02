@@ -1,5 +1,5 @@
 body {
-  background-image: url(/images/5172658.jpg);
+  background-image: url(./images/5172658.jpg);
   background-size: 100%;
 }
 
@@ -7,7 +7,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin: 50px auto;
 }
 
 #leaderboard {
@@ -38,10 +38,7 @@ fieldset {
 
 #allScores {
   display: none;
-  overflow-y: scroll;
-  height: 70vh;
   padding: 10px;
-  
 }
 
 #scoreInfo {
