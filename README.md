@@ -1,5 +1,5 @@
 # Leaderboard
-<img src="./images/screenshot.png" alt="Screenshot">
+<img src="./images/screenshot1.png" alt="Screenshot">
 
 ## Built With
 
@@ -7,7 +7,9 @@
 - CSS
 - Javascript
 - Webpack
+### Live Demo
 
+[Demo](https://leaderboard-levy.netlify.app/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
