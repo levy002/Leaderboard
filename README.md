@@ -1,5 +1,6 @@
 # Leaderboard
-<img src="./images/screenshot1.png" alt="Screenshot">
+<img src="./src/images/appPhoto1.png" alt="Screenshot">
+<img src="./src/images/appShoot2.png" alt="Screenshot">
 
 ## Built With
 
