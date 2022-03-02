@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="/src/styles.css">
 <script defer src="main.js"></script></head>
 <body>
+   <main>
     <fieldset>
       <legend>Leaderboard</legend>
-      <main class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center" id="leaderboard">
         <section class="d-flex flex-column gap-3" id="scores-section">
           <div class="d-flex w-100 justify-content-between gap-2">
-              <h3 class="text-white">Recent scores</h3>
+              <h3 class="text-white" id="recent">Recent scores</h3>
               <h3 class="text-white" id="no_recent">No Recent scores!</h3>
               <button id="refresh-btn">Refresh</button>
           </div>
@@ -27,8 +28,10 @@
                   <input type="text" id="userName" placeholder="User Name" required>
                   <input type="number" id="score" placeholder="Score" required>
                   <button type="submit" class="align-self-center" id="save-btn">Submit</button>
+            </form>      
         </section>
-    </main>  
+    </div>  
     </fieldset>
+ </main>  
 </body>
 </html>
