@@ -14,29 +14,17 @@
         <section class="d-flex flex-column gap-3">
           <div class="d-flex w-100 justify-content-around gap-2">
               <h3 class="">Recent scores</h3>
-              <button class="">Refresh</button>
+              <button id="refresh-btn">Refresh</button>
           </div>
-          <ul>
-            <li>
-                <p>name:</p>
-                <p>100</p>
-            </li>
-            <li>
-                <p>name:</p>
-                <p>20</p>
-            </li>
-            <li>
-                <p>name:</p>
-                <p>50</p>
-            </li>
+          <ul id="scores-section">
           </ul>
         </section>
         <section class="d-flex flex-column gap-3">
             <h3>Add your score</h3>
-            <form action="#" class="d-flex flex-column gap-3">
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Your score">
-                <button type="submit" class="align-self-end">Submit</button>
+            <form action="#" class="d-flex flex-column gap-3" id="form">
+                <input type="text" placeholder="Your name" id="userName">
+                <input type="number" placeholder="Your score" id="score">
+                <button type="submit" class="align-self-end" id="save-btn">Submit</button>
             </form>
         </section>
     </main>
