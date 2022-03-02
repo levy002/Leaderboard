@@ -5,28 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Leaderboard</h1>
-    </header>
-    <main class="d-flex m-auto gap-5">
-        <section class="d-flex flex-column gap-3">
-          <div class="d-flex w-100 justify-content-around gap-2">
-              <h3 class="">Recent scores</h3>
+   <main>
+    <fieldset>
+      <legend>Leaderboard</legend>
+      <div class="d-flex justify-content-between align-items-center" id="leaderboard">
+        <section class="d-flex flex-column gap-3" id="scores-section">
+          <div class="d-flex w-100 justify-content-between gap-2">
+              <h3 class="text-white" id="recent">Recent scores</h3>
+              <h3 class="text-white" id="no_recent">No Recent scores!</h3>
               <button id="refresh-btn">Refresh</button>
           </div>
-          <ul id="scores-section">
+          <strong id="quote">"HISTORICAL GAP IS CREATED DUE TO MISSING WRITTEN RECORDS!"...Use our website to store every single happy moment of your favorite game!!.....</strong>
+          <ul id="allScores">
           </ul>
         </section>
-        <section class="d-flex flex-column gap-3">
-            <h3>Add your score</h3>
+        <section class="d-flex flex-column align-self-start" id="addScore_section">
+            <h3 class="text-white text-center fs-1 mb-4">Add your score</h3>
             <form action="#" class="d-flex flex-column gap-3" id="form">
-                <input type="text" placeholder="Your name" id="userName">
-                <input type="number" placeholder="Your score" id="score">
-                <button type="submit" class="align-self-end" id="save-btn">Submit</button>
-            </form>
+                  <input type="text" id="userName" placeholder="User Name" required>
+                  <input type="number" id="score" placeholder="Score" required>
+                  <button type="submit" class="align-self-center" id="save-btn">Submit</button>
         </section>
-    </main>
+    </div>  
+    </fieldset>
+ </main>  
 </body>
 </html>

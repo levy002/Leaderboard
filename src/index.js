@@ -18,7 +18,3 @@ form.addEventListener('submit', () => {
 refreshButton.addEventListener('click', () => {
   getScoresData();
 });
-
-window.onload = () => {
-  getScoresData();
-};

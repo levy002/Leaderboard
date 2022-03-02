@@ -1,34 +1,118 @@
-header {
-  width: 90%;
-  margin: 30px auto 0;
+body {
+  background-image: url(/images/5172658.jpg);
+  background-size: 100%;
 }
 
 main {
-  width: 80%;
-}
-
-ul {
-  border: 2px solid #000;
-  padding: 0;
-  margin: 0;
-}
-
-li {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 5px;
+  justify-content: center;
+  height: 100vh;
 }
 
-ul li:nth-child(odd) {
-  background-color: rgb(223, 217, 217);
+#leaderboard {
+  gap: 50px;
+}
+
+fieldset {
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(135, 206, 235, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 5px solid rgba(135, 206, 235, 0.6);
+}
+
+#scores-section {
+  flex-basis: 65%;
+}
+
+#scores-section div {
+  padding: 0 25px;
+}
+
+#addScore_section {
+  flex-basis: 45%;
+}
+
+#allScores {
+  display: none;
+  overflow-y: scroll;
+  height: 70vh;
+  padding: 10px;
+  
+}
+
+#scoreInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 30px;
+  padding: 7px 25px;
+  background-color: rgba(33, 137, 223, 0.5);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#recent {
+  display: none;
+}
+
+#no_recent {
+  display: block;
+  font-style: italic;
+}
+
+strong {
+  display: block;
+  color: rgb(163, 197, 8);
+  padding: 10px 50px;
+  font-style: italic;
+  text-align: center;
 }
 
 li > * {
   margin: 0;
 }
 
-input,
+label {
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  border: 1px solid #fff;
+}
+
 button {
-  border: 2px solid #000;
+  padding: 8px 30px;
+  border-radius: 7px;
+  outline: none;
+  color: #fff;
+  font-size: 17px;
+  border: 1px solid rgb(4, 178, 247);
+  background-color: rgb(4, 178, 247);
+}
+
+button:hover {
+  padding: 8px 40px;
+  opacity: 0.9;
+}
+
+legend {
+  color: rgb(17, 226, 80);
+  font-size: 3rem;
+  text-align: center;
+  float: none;
+  width:auto;
+  padding: 5px 20px;
+  border: 5px solid rgba(9, 136, 240, 0.5);
+  border-radius: 25px;
+  margin: 0;
+  background-color: rgba(135, 206, 235, 0.4);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

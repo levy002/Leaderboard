@@ -1,14 +1,26 @@
-const scoresSection = document.getElementById('scores-section');
+const allScores = document.getElementById('allScores');
+const quote = document.getElementById('quote');
+const noRecents = document.getElementById('no_recent');
+const recents = document.getElementById('recent');
 
 const populate = (data) => {
-  scoresSection.replaceChildren();
+  allScores.replaceChildren();
+  data.sort((a, b) => b.score - a.score);
+  if (data.length !== 0) {
+    allScores.style.display = 'block';
+    quote.style.display = 'none';
+    noRecents.style.display = 'none';
+    recents.style.display = 'block';
+  } else {
+    recents.style.display = 'none';
+  }
   data.map((s) => {
     const scoreInfo = document.createElement('li');
     scoreInfo.id = 'scoreInfo';
 
     const username = document.createElement('p');
     username.id = 'name';
-    username.textContent = `${s.user} :`;
+    username.textContent = s.user;
     scoreInfo.appendChild(username);
 
     const userscore = document.createElement('p');
@@ -16,7 +28,7 @@ const populate = (data) => {
     userscore.textContent = s.score;
     scoreInfo.appendChild(userscore);
 
-    scoresSection.appendChild(scoreInfo);
+    allScores.appendChild(scoreInfo);
     return s;
   });
 };
