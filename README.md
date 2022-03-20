@@ -3,10 +3,8 @@
 <img src="./src/images/appShoot2.png" alt="Screenshot">
 
 ## Built With
-
-- HTML
-- CSS
 - Javascript
+- CSS
 - Webpack
 ### Live Demo
 
