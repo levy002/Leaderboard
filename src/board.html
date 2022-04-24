@@ -7,26 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Leaderboard</h1>
-    </header>
-    <main class="d-flex m-auto gap-5">
-        <section class="d-flex flex-column gap-3">
-          <div class="d-flex w-100 justify-content-around gap-2">
-              <h3 class="">Recent scores</h3>
-              <button id="refresh-btn">Refresh</button>
+   <main>
+    <fieldset>
+      <legend>Leaderboard</legend>
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-5" id="leaderboard">
+        
+        <section class="d-flex flex-column gap-3 align-self-md-center" id="scores-section">
+          <div class="d-flex w-100 flex-column justify-content-between gap-2 p-0">
+            <strong class="p-0 mb-3" id="quote">"HISTORICAL GAP IS CREATED DUE TO MISSING WRITTEN RECORDS!"...Use our website to store every single happy moment of your favorite game!!.....</strong>
+              <h3 class="text-warning align-self-center text-center" id="recent">Recent scores</h3>
+              <h3 class="text-white fs-4 align-self-center text-center" id="no_recent">Click refresh to get your scores</h3>
+              <button id="refresh-btn" class="align-self-center">Refresh</button>
           </div>
-          <ul id="scores-section">
+          <ul id="allScores" class="m-0">
           </ul>
         </section>
-        <section class="d-flex flex-column gap-3">
-            <h3>Add your score</h3>
-            <form action="#" class="d-flex flex-column gap-3" id="form">
-                <input type="text" placeholder="Your name" id="userName">
-                <input type="number" placeholder="Your score" id="score">
-                <button type="submit" class="align-self-end" id="save-btn">Submit</button>
-            </form>
+        <section class="d-flex flex-column align-self-center" id="addScore_section">
+            <h3 class="text-white text-center fs-1 mb-md-4 mb-2">Add your score</h3>
+            <form action="#" class="d-flex flex-column gap-2 gap-md-3" id="form">
+                  <input type="text" id="userName" placeholder="User Name" required>
+                  <input type="number" id="score" placeholder="Score" required>
+                  <button type="submit" class="align-self-center" id="save-btn">Submit</button>
+            </form>      
         </section>
-    </main>
+    </div>  
+    </fieldset>
+ </main>  
 </body>
 </html>
