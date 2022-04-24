@@ -1,11 +1,20 @@
 # Leaderboard
-<img src="./src/images/appPhoto1.png" alt="Screenshot">
-<img src="./src/images/appShoot2.png" alt="Screenshot">
+<div>
+  <img src="./src/images/mobile1.png">
+  <img src="./src/images/mobile2.png">
+</div>
+
+<div>
+  <img src="./src/images/desktop1.png">
+  <img src="./src/images/desktop2.png">
+</div>
 
 ## Built With
 - Javascript
+- Bootstrap
 - CSS
 - Webpack
+
 ### Live Demo
 
 [Demo](https://leaderboard-levy.netlify.app/)
