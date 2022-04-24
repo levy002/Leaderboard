@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body>
    <main>
     <fieldset>
       <legend>Leaderboard</legend>
-      <div class="d-flex justify-content-between align-items-center" id="leaderboard">
-        <section class="d-flex flex-column gap-3" id="scores-section">
-          <div class="d-flex w-100 justify-content-between gap-2">
-              <h3 class="text-white" id="recent">Recent scores</h3>
-              <h3 class="text-white" id="no_recent">No Recent scores!</h3>
-              <button id="refresh-btn">Refresh</button>
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-5" id="leaderboard">
+        
+        <section class="d-flex flex-column gap-3 align-self-md-center" id="scores-section">
+          <div class="d-flex w-100 flex-column justify-content-between gap-2 p-0">
+            <strong class="p-0 mb-3" id="quote">"HISTORICAL GAP IS CREATED DUE TO MISSING WRITTEN RECORDS!"...Use our website to store every single happy moment of your favorite game!!.....</strong>
+              <h3 class="text-warning align-self-center text-center" id="recent">Recent scores</h3>
+              <h3 class="text-white fs-4 align-self-center text-center" id="no_recent">Click refresh to get your scores</h3>
+              <button id="refresh-btn" class="align-self-center">Refresh</button>
           </div>
-          <strong id="quote">"HISTORICAL GAP IS CREATED DUE TO MISSING WRITTEN RECORDS!"...Use our website to store every single happy moment of your favorite game!!.....</strong>
-          <ul id="allScores">
+          <ul id="allScores" class="m-0">
           </ul>
         </section>
-        <section class="d-flex flex-column align-self-start" id="addScore_section">
-            <h3 class="text-white text-center fs-1 mb-4">Add your score</h3>
-            <form action="#" class="d-flex flex-column gap-3" id="form">
+        <section class="d-flex flex-column align-self-center" id="addScore_section">
+            <h3 class="text-white text-center fs-1 mb-md-4 mb-2">Add your score</h3>
+            <form action="#" class="d-flex flex-column gap-2 gap-md-3" id="form">
                   <input type="text" id="userName" placeholder="User Name" required>
                   <input type="number" id="score" placeholder="Score" required>
                   <button type="submit" class="align-self-center" id="save-btn">Submit</button>
