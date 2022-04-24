@@ -12,16 +12,31 @@ const populate = (data) => {
     noRecents.style.display = 'none';
     recents.style.display = 'block';
   } else {
-    recents.style.display = 'none';
+    allScores.style.display = 'block';
+    quote.style.display = 'none';
+    noRecents.style.display = 'none';
+    const noScores = document.createElement('h3');
+    noScores.className = 'align-self-center text-warning text-center';
+    noScores.textContent = 'No Recent Scores!!';
+    allScores.appendChild(noScores);
   }
   data.map((s) => {
     const scoreInfo = document.createElement('li');
     scoreInfo.id = 'scoreInfo';
 
+    const userDiv = document.createElement('div');
+    userDiv.className = 'pos-name';
+
+    const userPosition = document.createElement('p');
+    userPosition.textContent = `${data.indexOf(s) + 1}.`;
+    userDiv.appendChild(userPosition);
+
     const username = document.createElement('p');
     username.id = 'name';
     username.textContent = s.user;
-    scoreInfo.appendChild(username);
+    userDiv.appendChild(username);
+
+    scoreInfo.appendChild(userDiv);
 
     const userscore = document.createElement('p');
     userscore.id = 'score';

@@ -1,6 +1,6 @@
 import { url } from './createGame.js';
 
-const gameId = 'el-1';
+const gameId = 'game-f';
 const addScore = async (name, score) => {
   const response = await fetch(`${url}/${gameId}/scores`, {
     method: 'POST',
@@ -15,4 +15,4 @@ const addScore = async (name, score) => {
   return response.json();
 };
 
-export default addScore;
+export { addScore, gameId };
