@@ -1,7 +1,7 @@
 # Leaderboard
 <div>
-  <img src="./src/images/mobile1.png">
-  <img src="./src/images/mobile2.png">
+  <img width="48%" src="./src/images/mobile1.png">
+  <img width="48%" src="./src/images/mobile2.png">
 </div>
 
 <div>
