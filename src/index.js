@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import addScore from './modules/addScore.js';
+import { addScore, gameId } from './modules/addScore.js';
 import { createGame } from './modules/createGame.js';
 import getScoresData from './modules/getData.js';
 
@@ -16,5 +16,5 @@ form.addEventListener('submit', () => {
 });
 
 refreshButton.addEventListener('click', () => {
-  getScoresData();
+  getScoresData(gameId);
 });
